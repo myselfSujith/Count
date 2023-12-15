@@ -1,0 +1,253 @@
+.display {
+	flex: 1;
+	display: flex;
+	flex-direction : column;
+	align-items : center;
+	justify-content : center;
+	background: #001f3f;
+	font-family: tahoma !important;
+	padding-bottom: 60px;
+}
+.event_title {
+	color: #fff;	
+	text-align: center;
+	font-size: 54px;
+	letter-spacing: 5px;
+}
+.event_t {
+	color: #fff;	
+	text-align: center;
+	font-size: 34px;
+	letter-spacing: 5px;
+}
+p.action_caption{
+	color: #fff;	
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 5px;
+	font-weight: 100;
+}
+
+/* Snowflakes styles */
+.snowflakes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* Snowflake styles */
+.snowflake {
+  position: absolute;
+  top: -2em;
+  color: #fff;
+  font-size: 1em;
+  pointer-events: none;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+/* Keyframes for snowflake animation */
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+/* Prevent horizontal scrolling */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hide audio element */
+#audio {
+  display: none;
+}
+
+/* Hide typing sound element */
+#typing-sound {
+  display: none;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+}
+
+/* Code container styles */
+#code-container {
+  font-family: 'Courier New', monospace;
+  color: #33ff33;
+  background: #222;
+  background-image: linear-gradient(top, #222, #333, #333, #222); 
+  border: 1px solid #111;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+  text-align: left;
+  padding: 10px;
+  margin: 20px auto;
+  display: inline-block;
+  width: 95%;
+  max-width: 600px;
+  font-size: 1.2em;
+  line-height: 1.5;
+  min-height: 4em;
+  margin-top: 80px;
+  position: relative;
+}
+
+
+
+
+/* Pseudo-elements for code container */
+#code-container:before,
+#code-container:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 8px;
+  height: 65px;
+  background: #444;
+  background-image: linear-gradient(to bottom, #555, #444, #444, #555); 
+  border: 1px solid #111;
+  transform: translateY(-50%);
+}
+
+/* Pseudo-elements positioning for code container */
+#code-container:before {
+  left: -10px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+#code-container:after {
+  right: -10px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* Cursor blink animation */
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: #33ff33;
+  animation: blink 1s infinite step-start;
+}
+
+@keyframes blink {
+  50% { background-color: transparent; }
+}
+
+
+#door{
+	text-align: center;
+}
+.call_to_action_button{
+	margin-top: 40px;
+	border-radius: 20px;
+}
+button.call_to_action_button {
+	letter-spacing: 2px;
+	text-align: center;
+	font-size: 16px;
+	top: 50%;
+	left: 50%;
+	color: #fff;
+	padding: 20px;
+	width: 0 auto;
+	border-radius: 20px;
+	box-sizing: border-box;
+	background: #0074D9;
+	border-style: none;
+}
+button:hover{
+	background: #fff;
+	color: #0074D9;
+	font-weight: bold;
+}
+button:active{
+	background: #fff;
+	color: #0074D9;
+	font-weight: bold;
+}
+button:focus{
+	background: #fff;
+	color: #0074D9;
+	font-weight: bold;
+}
+.clock{
+	width: auto;
+}
+#numbers{
+	width: auto;
+}
+#numbers span{
+	float: left;
+	text-align: center;
+	font-size: 60px;
+	margin: 0 2.5%;
+	color: #fff;
+	padding: 20px;
+	width: 20%;
+	border-radius: 20px;
+	box-sizing: border-box;
+}
+#numbers span:nth-child(1){
+  background: #fa5559;
+}
+#numbers span:nth-child(2){
+  background: #26c2b9;
+}
+#numbers span:nth-child(3){
+  background: #f6bc58;
+}
+#numbers span:nth-child(4){
+  background: #2dcb74;
+}
+
+#numbers:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#units span{
+	float: left;
+	width: 25%;
+	text-align: center;
+	margin-top: 30px;
+	color: #ddd;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+}
+
+span.turn{
+  	animation: turn 0.7s ease forwards;
+}
+
+@keyframes turn{
+	0%{transform: rotateX(0deg)}
+	100%{transform: rotateX(360deg)}
+}
+
+.hide{
+	display: none;
+}
+
+.author{
+	padding-top: 60px;
+	color: #fff;	
+	text-align: center;
+	font-size: 13px;
+	letter-spacing: 2px;
+	font-weight: 100;
+}
+
