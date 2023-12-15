@@ -1,22 +1,22 @@
 
-let countdown;// setInterval function for countdown clock
-let serviceInSession;// seTimeout function for when event is Live
-const clock = document.getElementById('clock');// div that controls the clock container 
-const livestreamButton = document.getElementById('door');// div that controls the button for the user to click to enter the live stream
-const daysUnit = document.querySelector('.days');// span element that displays the amount of days
-const hoursUnit = document.querySelector('.hours');// span element that displays the amount of hours
-const minutesUnit = document.querySelector('.minutes');// span element that displays the amount of minutes
-const secondsUnit = document.querySelector('.seconds');// span element that displays the amount of seconds
+let countdown;
+let serviceInSession;
+const clock = document.getElementById('clock'); 
+const livestreamButton = document.getElementById('door');
+const daysUnit = document.querySelector('.days');
+const hoursUnit = document.querySelector('.hours');
+const minutesUnit = document.querySelector('.minutes');
+const secondsUnit = document.querySelector('.seconds');
 
-const startDate = new Date(2024, 0, 4, 00, 00, 00).getTime();// initial date and time the countdown clock started from (Year, Month, Day, Hours, Minutes, Seconds,)
-startDate > Date.now() ? timer(startDate) : calculateFutureDate(startDate);// conditional statement that decides if the timer function should start with the start date or calculate another date
-// timer function takes in a date parameter in milliseconds
+const startDate = new Date(2024, 0, 4, 00, 00, 00).getTime();
+startDate > Date.now() ? timer(startDate) : calculateFutureDate(startDate);
+
 function timer(date){
-	// countdown holds the entire timer functionality 
+	
 	countdown = setInterval(()=>{
-		const now = Date.now();// current date and time
-		const differenceInTime = date - now;// distance between current time and future time of event
-		// checks timer to see if the distance is zero and if zero
+		const now = Date.now();
+		const differenceInTime = date - now;
+		
 		if(differenceInTime < 0){
 			clearInterval(countdown);// clear timer
 			clock.classList.add("hide");// hide the clock div element
@@ -98,13 +98,12 @@ document.addEventListener('DOMContentLoaded', startSnowing);
 
 // Array of strings to be "typed"
 const codePhrases = [
-    
     "SELECT Ashhhh# FROM World WHERE Person = 'Veryyy Worstttt' AND Mood = 'Irritated';",
-    "console.log('Small Advance Wishes for your Birthday. Don't expect more this website. It's just a wishes...!');",
+    "console.log('Small Advance Wishes for your Birthday. Don't expect more this website. It's just a wishes & open again on your Birthday...!');",
     "UPDATE `AGE` SET `one more happy year` = '100%' WHERE `Name` = 'Ashmiiii';",
     "Removing Misunderstandings...",
     "Appending Memories...",
-    "Uploading inProgress.... "
+    "Uploading more stuff inProgress.... "
 ];
 // Element where the code will be displayed
 const codeElement = document.getElementById('code');
