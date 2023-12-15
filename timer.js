@@ -8,7 +8,7 @@ const hoursUnit = document.querySelector('.hours');
 const minutesUnit = document.querySelector('.minutes');
 const secondsUnit = document.querySelector('.seconds');
 
-const startDate = new Date(2024, 0, 4, 00, 00, 00).getTime();
+const startDate = new Date(2023, 0, 4, 00, 00, 00).getTime();
 startDate > Date.now() ? timer(startDate) : calculateFutureDate(startDate);
 
 function timer(date){
