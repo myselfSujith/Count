@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', startSnowing);
 const codePhrases = [
     
     "SELECT Ashhhh# FROM World WHERE Person = 'Veryyy Worstttuuu😜' AND Mood = 'Irritated🫠';",
-    "console.log('A Small Advance Wishes for your Birthday. Don't expect more this website. It's just a wishes...!');",
+    "console.log('A Small Advance Wishes for your Birthday. Don't expect more from this website. It's just a wishes in adv...!');",
     "UPDATE `AGE` SET `one more happy year` = '100%' WHERE `Name` = 'Ashmiiii';",
     "life =new life ()",
     "If(life.Remove(Misunderstandings))",
