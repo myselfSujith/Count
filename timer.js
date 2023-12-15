@@ -99,11 +99,12 @@ document.addEventListener('DOMContentLoaded', startSnowing);
 // Array of strings to be "typed"
 const codePhrases = [
     
-    "SELECT Ashhhh# FROM World WHERE Person = 'Veryyy Worstttt' AND Mood = 'Irritated';",
-    "console.log('Small Advance Wishes for your Birthday. Don't expect more this website. It's just a wishes...!');",
+    "SELECT Ashhhh# FROM World WHERE Person = 'Veryyy Worstttuuu😜' AND Mood = 'Irritated🫠';",
+    "console.log('A Small Advance Wishes for your Birthday. Don't expect more this website. It's just a wishes...!');",
     "UPDATE `AGE` SET `one more happy year` = '100%' WHERE `Name` = 'Ashmiiii';",
-    "Removing Misunderstandings...",
-    "Appending Memories...",
+    "life =new life ()",
+    "If(life.Remove(Misunderstandings))",
+    "    life.Appended(Memories)",
     "Uploading inProgress.... "
 ];
 // Element where the code will be displayed
