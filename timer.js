@@ -8,7 +8,7 @@ const hoursUnit = document.querySelector('.hours');// span element that displays
 const minutesUnit = document.querySelector('.minutes');// span element that displays the amount of minutes
 const secondsUnit = document.querySelector('.seconds');// span element that displays the amount of seconds
 
-const startDate = new Date(2024, 0, 4, 00, 00, 00).getTime();// initial date and time the countdown clock started from (Year, Month, Day, Hours, Minutes, Seconds,)
+const startDate = new Date(2024, 0, 3, 00, 00, 00).getTime();// initial date and time the countdown clock started from (Year, Month, Day, Hours, Minutes, Seconds,)
 startDate > Date.now() ? timer(startDate) : calculateFutureDate(startDate);// conditional statement that decides if the timer function should start with the start date or calculate another date
 // timer function takes in a date parameter in milliseconds
 function timer(date){
@@ -103,8 +103,9 @@ const codePhrases = [
     "console.log('A Small Advance Wishes for your Birthday. Don't expect more from this website. It's just a wishes in adv...!');",
     "UPDATE `AGE` SET `one more happy year` = '100%' WHERE `Name` = 'Ashmiiii';",
     "life =new life ()",
-    "If(life.Remove(Misunderstandings))",
-    "    life.Appended(Memories)",
+    "life.remove(Conflits)",
+    "life.add(memories)",
+    "life.add(happiness)",
     "Uploading inProgress.... "
 ];
 // Element where the code will be displayed
